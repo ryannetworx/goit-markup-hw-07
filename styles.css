@@ -125,6 +125,7 @@ h3 {
     display: flex;
 }
 
+.hamburger-overlay,
 .header-body-medium li {
     display: inline-block;
     margin-right: 20%;
@@ -228,6 +229,8 @@ h3 {
         padding: 0; /* Remove the padding to make it responsive */
     }
 }
+
+
 
 /* END OF NAVIGATION BAR */
 
