@@ -362,7 +362,14 @@ h3 {
     color: #4D5AE5
 }
 
+.overlay-team-social {
+    margin-left: 30px;
+}
 
+.overlay-instagram {
+    height: 40px;
+    width: 40px;
+}
 
 /* END OF NAVIGATION BAR */
 
