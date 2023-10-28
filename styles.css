@@ -307,6 +307,9 @@ h3 {
     align-content: center;
 }
 
+.close-navbutton:hover {
+    background-color: #F4F4FD;
+}
 .nav-box {
     width: 428px;
     height: 728px;
@@ -318,6 +321,10 @@ h3 {
     font-family: "roboto", sans-serif;
     font-weight: 700;
     font-size: 36px;
+}
+
+.bars-overlay .active-link {
+    color:#404BBF;
 }
 
 .bars-overlay ul {
@@ -339,7 +346,7 @@ h3 {
 .header-nav-studio:hover,
 .header-nav-portfolio:hover,
 .header-nav-contacts:hover {
-    color:#404BBF;
+    color:#4D5AE5;
 }
 
 .overlay-phone-email {
