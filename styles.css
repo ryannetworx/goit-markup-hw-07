@@ -366,10 +366,43 @@ h3 {
     margin-left: 30px;
 }
 
-.overlay-instagram {
+.overlay-social-button {
     height: 40px;
     width: 40px;
+    scale: -0deg;
+    background: #4D5AE5;
+    border-radius: 50%;
+    border: none; /* Remove button border */
+    text-align: center;
+    margin: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 5px;
 }
+
+.overlay-social-button img {
+    max-width: 24px;
+    max-height: 24px;
+}
+#overlay-instagram,
+#overlay-twitter,
+#overlay-facebook,
+#overlay-linkedin {
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    margin-right: 36px;
+}
+
+#overlay-instagram:hover,
+#overlay-twitter:hover,
+#overlay-facebook:hover,
+#overlay-linkedin:hover {
+    background-color: #31D0AA; /* Change the background color on hover */
+}
+
 
 /* END OF NAVIGATION BAR */
 
