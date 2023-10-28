@@ -185,14 +185,13 @@ h3 {
     left: 0;
 }
 
-.nav-overlay {
+.fa-bars {
     display: none;
 }
 
 
-
 /* Media query for smaller screens */
-@media (max-width: 1024px) {
+@media (max-width: 1158px) {
     .centered-logo {
         margin-left: 30px;
         padding: 10px;
@@ -200,7 +199,7 @@ h3 {
     }
 
     .web, .studio {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .header-body-medium ul {
@@ -234,6 +233,104 @@ h3 {
     .header-nav-phone {
         padding: 0; /* Remove the padding to make it responsive */
     }
+}
+
+@media (max-width: 500px) {
+    .fa-bars {
+        display: flex;
+        margin-right: 30px;
+        cursor: pointer;
+        width: 32px;
+        height: 22px;
+        align-content: center;
+    }
+
+    .nav-overlay {
+        display: none;
+    }
+
+    .fa-bars:hover {
+        background-color: #ccf5eb; /* Add a semi-transparent background color */
+        cursor: pointer; /* Change the cursor to a pointer to indicate interactivity */
+    }
+
+    .centered-logo {
+        margin-left: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .web, .studio {
+        font-size: 20px;
+    }
+
+    .header-body-medium,
+    .contact-info ul, 
+    .contact-info li,
+    .header-nav-mail,
+    .header-nav-phone {
+        display: none;
+    }
+
+    .nav-box {
+        display: none;
+    }
+}
+
+/* Styles for the navigation overlay */
+#navOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background overlay */
+    z-index: 101; /* Ensure it appears above other content, including the navigation bar */
+}
+
+#navBox {
+    width: 408px;
+    height: 570px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    height: 100%;
+    width: 300px; /* Adjust the width as needed */
+    background-color: #FFFFFF; /* Background color for the overlay box */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+}
+
+/* Styles for the links and social icons in the navigation overlay */
+#navBox ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#navBox li {
+    margin: 15px 0;
+}
+
+#navBox a {
+    text-decoration: none;
+    color: #333; /* Text color for links */
+    display: block;
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+.team-social-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-social-button {
+    background: none;
+    border: none;
+}
+
+.team-social-button img {
+    width: 30px; /* Adjust the size of social icons as needed */
+    height: 30px;
 }
 
 
