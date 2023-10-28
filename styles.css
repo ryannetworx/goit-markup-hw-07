@@ -185,6 +185,12 @@ h3 {
     left: 0;
 }
 
+.nav-overlay {
+    display: none;
+}
+
+
+
 /* Media query for smaller screens */
 @media (max-width: 1024px) {
     .centered-logo {
