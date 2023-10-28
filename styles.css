@@ -285,52 +285,81 @@ h3 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background overlay */
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 6px 0px #2E2F4214;
+    box-shadow: 0px 1px 1px 0px #2E2F4229;
+    box-shadow: 0px 2px 1px 0px #2E2F4214;
     z-index: 101; /* Ensure it appears above other content, including the navigation bar */
 }
 
-#navBox {
-    width: 408px;
-    height: 570px;
+.close-navbutton {
     position: absolute;
-    top: 30px;
-    right: 0;
-    height: 100%;
-    width: 300px; /* Adjust the width as needed */
-    background-color: #FFFFFF; /* Background color for the overlay box */
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #E7E9FC;
+    width: 24px;
+    height: 24px;
+    color: #2E2F42;
+    font-size: 20px;
+    cursor: pointer;
+    align-content: center;
 }
 
-/* Styles for the links and social icons in the navigation overlay */
-#navBox ul {
-    list-style-type: none;
-    padding: 0;
+.nav-box {
+    width: 428px;
+    height: 728px;
+    background: #FFFFFF;
 }
 
-#navBox li {
-    margin: 15px 0;
+.bars-overlay {
+    margin-top: 80px;
+    font-family: "roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
 }
 
-#navBox a {
+.bars-overlay ul {
+    list-style-type: none; /* Remove bullet points from list items */
+}
+
+.bars-overlay li,
+.bars-overlay a {
     text-decoration: none;
-    color: #333; /* Text color for links */
-    display: block;
-    font-size: 18px; /* Adjust the font size as needed */
 }
 
-.team-social-container {
-    display: flex;
-    justify-content: space-around;
+.header-nav-studio,
+.header-nav-portfolio,
+.header-nav-contacts {
+    color: #2E2F42;
+    line-height: 60px;
 }
 
-.team-social-button {
-    background: none;
-    border: none;
+.header-nav-studio:hover,
+.header-nav-portfolio:hover,
+.header-nav-contacts:hover {
+    color:#404BBF;
 }
 
-.team-social-button img {
-    width: 30px; /* Adjust the size of social icons as needed */
-    height: 30px;
+.overlay-phone-email {
+    margin-top: 90px;
+}
+
+.overlay-nav-phone {
+    color: #434455;
+    font-weight: 700;
+}
+
+.overlay-nav-mail {
+    color: #434455;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.overlay-nav-phone:hover,
+.overlay-nav-mail:hover {
+    color: #4D5AE5
 }
 
 
