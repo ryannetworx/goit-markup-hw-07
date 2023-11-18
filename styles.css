@@ -1417,9 +1417,10 @@ footer {
 
     .footer-div {
         display: flex;
+        position: relative;
         flex-direction: column; /* Stack the elements vertically */
         align-items: center; /* Center align the items */
-        margin-left: -60px;
+        margin-left: -120px;
     }
 
     .footer-logo {
@@ -1427,7 +1428,7 @@ footer {
     }
 
     .footer-social {
-        margin-left: 100px; /* Adjust the left margin as needed */
+        margin-left: 90px; /* Adjust the left margin as needed */
         margin-top: -100px; /* Retain the top margin */
         max-width: 428px; /* Set a maximum width for the social section */
     }
@@ -1436,8 +1437,26 @@ footer {
         margin-left: 48px;
     }
 
-    .footer subscribe {
-        display: block;
+    .subscribe {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+    }
+
+    .subscribe-label {
+        margin-left: 10%;
+    }
+
+    .email-subscribe-btns {
+        display: flex;
+        margin-left: 50%;
+    }
+
+    .subscribe-btn {
+        display: flex;
+        position: inherit;
     }
 }
 
