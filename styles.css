@@ -1136,9 +1136,9 @@ footer {
     margin-top: 100px;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Align elements at the top */
-    flex-wrap: wrap;
-    position: relative;
+    /* align-items: flex-start; Align elements at the top */
+    /* flex-wrap: wrap; */
+    /* position: relative; */
     justify-content: space-between;
 }
 
@@ -1148,6 +1148,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     /* padding: 0 0px; */
+    /* margin-top: 10px; */
 }
 
 .footer-list-container {
@@ -1159,7 +1160,7 @@ footer {
     /* align-items: flex-start; */
     list-style: none;
     padding-left: 40px;
-    flex: 1;
+    /* flex: 1; */
 }
 
 #web-footer, #studio-footer {
@@ -1192,7 +1193,7 @@ footer {
     align-items: center;
     gap: 16px;
     width: auto;
-    margin-top: -50px; /* Add 50px distance from the top */
+    margin-top: 30px; /* Add 50px distance from the top */
     margin-left: 5px; /* Add 50px distance from the left */
     justify-content: flex-start; /* Left-align the list items within the container */
 }
@@ -1439,7 +1440,6 @@ footer {
 
     .subscribe {
         display: flex;
-        position: relative;
         flex-direction: column;
         align-items: center;
         margin-top: 80px;
@@ -1448,16 +1448,7 @@ footer {
     .subscribe-label {
         margin-left: 10%;
     }
-
-    .email-subscribe-btns {
-        display: flex;
-        margin-left: 50%;
-    }
-
-    .subscribe-btn {
-        display: flex;
-        position: inherit;
-    }
+    
 }
 
 
