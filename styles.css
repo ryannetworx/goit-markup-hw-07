@@ -780,28 +780,57 @@ input, textarea {
 }
 
 /* Responsive table - split into two columns on smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .section-content-1 table {
         width: 100%; /* Make the table width 100% */
+        max-width: 792px; /* Set a maximum width for the table */
+        margin: 0 auto; /* Center the table horizontally */
+    }
+
+    .section-content-1 h3 {
+        text-align: justify;
     }
 
     .section-content-1 td,
     .section-content-1 th {
-        display: block;
-        width: 100%;
-        text-align: center; /* Center the text within each cell */
+        display: inline-block;
+        width: 48%; /* Set width for two columns with a little space in between */
+        box-sizing: border-box; /* Include padding and border in the width calculation */
+        text-align: justify; /* Center the text within each cell */
+        margin: 0;
+        padding: 10px; /* Add padding for spacing between cells */
     }
 
-    .feature-box {
-        width: 100%; /* Make feature boxes take up full width */
-        margin-bottom: 20px; /* Add some spacing between the feature boxes */
-    }
-
+    .feature-box,
     .feature-box img {
-        width: 40px; /* Adjust the image width for smaller screens */
-        height: 40px; /* Adjust the image height for smaller screens */
+        display: none;
     }
 }
+
+/* mobile size */
+@media (max-width: 599px) {
+    .section-content-1 table {
+        width: 100%; /* Make the table width 100% */
+    }
+
+    .section-content-1 h3 {
+        text-align: center;
+    }
+    .section-content-1 td,
+    .section-content-1 th {
+        display: block;
+        width: 356px;
+        text-align: justify; /* Center the text within each cell */
+        margin: 0;
+        padding: 0;
+    }
+
+    .feature-box,
+    .feature-box img {
+        display: none;
+    }
+}
+
 
 /* END OF TABLE 1 */
 
