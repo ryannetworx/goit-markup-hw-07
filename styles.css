@@ -1368,8 +1368,16 @@ footer {
     background: var(--pressed-state-color);
 }
 
+@media (max-width: 768px) {
+    .main-footer {
+        flex-direction: column;
+        align-items: center;
+    }
 
-
+    .footer-div {
+        margin-left: 100px;
+    }
+}
 
 /* PORTFOLIO ******************************** */
 
