@@ -1132,14 +1132,12 @@ footer {
     width: 100%;
     height: 280px;
     background: #2E2F42;
-    padding: 20px 0;
     margin-top: 100px;
     display: flex;
     justify-content: center;
     /* align-items: flex-start; Align elements at the top */
     /* flex-wrap: wrap; */
     /* position: relative; */
-    justify-content: space-between;
 }
 
 .footer-div {
@@ -1147,6 +1145,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 10px;
     /* padding: 0 0px; */
     /* margin-top: 10px; */
 }
@@ -1159,7 +1158,7 @@ footer {
     justify-content: center;
     /* align-items: flex-start; */
     list-style: none;
-    padding-left: 40px;
+    /* padding-left: 40px; */
     /* flex: 1; */
 }
 
@@ -1189,13 +1188,7 @@ footer {
 
 /* Footer Social Media Section */
 .footer-social {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    width: auto;
-    margin-top: 30px; /* Add 50px distance from the top */
-    margin-left: 5px; /* Add 50px distance from the left */
-    justify-content: flex-start; /* Left-align the list items within the container */
+    margin-top: -50px;
 }
 
 .footer-social-container {
@@ -1288,13 +1281,14 @@ footer {
 
 .subscribe {
     /* justify-content: space-between; */
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    max-width: none;
     left: auto; /* Note: This is also a position property */
     border-radius: 4px;
     /* gap: 16px; */
-    margin-top: -40px;
-    margin-right: 100px;
+    margin-top: 62px;
+    /* margin-right: 100px; */
 }
 
 .subscribe-label {
@@ -1374,82 +1368,7 @@ footer {
     background: var(--pressed-state-color);
 }
 
-.footer-social,
-.subscribe {
-    display: inline-block;
-}
 
-/* Responsive adjustments for tablet screens */
-@media (max-width: 767px) {
-    footer {
-        width: 100%;
-        height: 400px;
-        background: #2E2F42;
-        padding-top: 0;
-        margin-top: 100px;
-    }
-    .footer-div {
-        display: inline-block;
-        position: relative;
-    }
-    
-    .footer-social {
-        display: inline-block;
-        position: relative;
-        top: 60px;
-    }
-
-    .subscribe {
-    display: block;
-    clear: both;
-    margin-left: 68px;
-    }
-}
-
-/* Responsive adjustments for mobile screens */
-@media (max-width: 599px) {
-    footer {
-        width: 100%;
-        height: 664px;
-        background: #2E2F42;
-        padding-top: 0;
-        margin-top: 100px;
-    }
-
-    .footer-div {
-        display: flex;
-        position: relative;
-        flex-direction: column; /* Stack the elements vertically */
-        align-items: center; /* Center align the items */
-        margin-left: -120px;
-    }
-
-    .footer-logo {
-        text-align: center; /* Center-align the text in the logo section */
-    }
-
-    .footer-social {
-        margin-left: 90px; /* Adjust the left margin as needed */
-        margin-top: -100px; /* Retain the top margin */
-        max-width: 428px; /* Set a maximum width for the social section */
-    }
-
-    .footer-social h4 {
-        margin-left: 48px;
-    }
-
-    .subscribe {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 80px;
-    }
-
-    .subscribe-label {
-        margin-left: 10%;
-    }
-    
-}
 
 
 /* PORTFOLIO ******************************** */
