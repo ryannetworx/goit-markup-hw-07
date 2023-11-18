@@ -780,7 +780,7 @@ input, textarea {
 }
 
 /* Responsive table - split into two columns on smaller screens */
-@media (max-width: 767px) {
+@media (max-width: 794px) {
     .section-content-1 table {
         width: 100%; /* Make the table width 100% */
         max-width: 792px; /* Set a maximum width for the table */
