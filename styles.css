@@ -1126,6 +1126,7 @@ input, textarea {
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
 /* Footer Styles */
 footer {
     width: 100%;
@@ -1142,7 +1143,7 @@ footer {
 }
 
 .footer-div {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1372,6 +1373,73 @@ footer {
     background: var(--pressed-state-color);
 }
 
+.footer-social,
+.subscribe {
+    display: inline-block;
+}
+
+/* Responsive adjustments for tablet screens */
+@media (max-width: 767px) {
+    footer {
+        width: 100%;
+        height: 400px;
+        background: #2E2F42;
+        padding-top: 0;
+        margin-top: 100px;
+    }
+    .footer-div {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .footer-social {
+        display: inline-block;
+        position: relative;
+        top: 60px;
+    }
+
+    .subscribe {
+    display: block;
+    clear: both;
+    margin-left: 68px;
+    }
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 599px) {
+    footer {
+        width: 100%;
+        height: 664px;
+        background: #2E2F42;
+        padding-top: 0;
+        margin-top: 100px;
+    }
+
+    .footer-div {
+        display: flex;
+        flex-direction: column; /* Stack the elements vertically */
+        align-items: center; /* Center align the items */
+        margin-left: -60px;
+    }
+
+    .footer-logo {
+        text-align: center; /* Center-align the text in the logo section */
+    }
+
+    .footer-social {
+        margin-left: 100px; /* Adjust the left margin as needed */
+        margin-top: -100px; /* Retain the top margin */
+        max-width: 428px; /* Set a maximum width for the social section */
+    }
+
+    .footer-social h4 {
+        margin-left: 48px;
+    }
+
+    .footer subscribe {
+        display: block;
+    }
+}
 
 
 /* PORTFOLIO ******************************** */
