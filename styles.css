@@ -1128,13 +1128,14 @@ input, textarea {
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 /* Footer Styles */
-footer {
+.footer-group {
     width: 100%;
     height: 280px;
     background: #2E2F42;
     margin-top: 100px;
     display: flex;
     justify-content: center;
+    justify-content: space-around;
     /* align-items: flex-start; Align elements at the top */
     /* flex-wrap: wrap; */
     /* position: relative; */
@@ -1284,11 +1285,10 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    left: auto; /* Note: This is also a position property */
     border-radius: 4px;
     /* gap: 16px; */
     margin-top: 62px;
-    /* margin-right: 100px; */
+    margin-right: 150px;
 }
 
 .subscribe-label {
@@ -1368,16 +1368,32 @@ footer {
     background: var(--pressed-state-color);
 }
 
-@media (max-width: 768px) {
-    #main-footer {
-        display: block;
-        flex-direction: column;
-        align-items: center;
+.footer-div,
+.footer-social,
+.subscribe {
+    width: 33%;
+    /* flex-direction: column; */
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .footer-group {
+        flex-direction: colum;
     }
 
     .footer-div {
-        display: none;
+        position: relative;
+        margin-left: 100px;
     }
+
+    .footer-social {
+        order: 2;
+    }
+
+    .subscribe {
+        order: 3;
+    }
+
 }
 
 /* PORTFOLIO ******************************** */
