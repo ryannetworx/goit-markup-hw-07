@@ -1145,7 +1145,7 @@ input, textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin: 0 10px; */
+    margin-left: 50px;
     /* padding: 0 0px; */
     /* margin-top: 10px; */
 }
@@ -1155,7 +1155,7 @@ input, textarea {
     height: auto;
     display: flex;
     flex-direction: column;
-    margin-left: -350px;
+    /* margin-left: -350px; */
     /* justify-content: center; */
     /* align-items: flex-start; */
     /* list-style: none;
@@ -1201,7 +1201,13 @@ input, textarea {
 
 .footer-social-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack children in a column */
+    gap: 16px;
+    margin-top: -50px;
+}
+
+.social-buttons-row {
+    display: flex;
     gap: 16px;
 }
 
@@ -1214,6 +1220,7 @@ input, textarea {
     text-align: left;
     color: #FFFFFF;
     padding: 0px;
+    margin: 0;
     
 }
 
@@ -1285,8 +1292,8 @@ input, textarea {
     width: 100%;
     border-radius: 4px;
     /* gap: 16px; */
-    margin-top: 62px;
-    margin-right: 150px;
+    /* margin-top: 62px; */
+    /* margin-right: 150px; */
 }
 
 .subscribe-label {
@@ -1369,9 +1376,9 @@ input, textarea {
 .footer-div,
 .footer-social,
 .subscribe {
-    width: 33%;
+    /* width: 33%; */
     /* flex-direction: column; */
-}
+} 
 
 /* Styles for smaller screens */
 @media screen and (max-width: 768px) {
