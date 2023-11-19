@@ -1145,7 +1145,7 @@ input, textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 10px;
+    /* margin: 0 10px; */
     /* padding: 0 0px; */
     /* margin-top: 10px; */
 }
@@ -1155,11 +1155,16 @@ input, textarea {
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-left: -350px;
+    /* justify-content: center; */
     /* align-items: flex-start; */
-    list-style: none;
-    /* padding-left: 40px; */
+    /* list-style: none;
+    padding-left: 40px; */
     /* flex: 1; */
+}
+
+.footer-list-container a {
+    text-decoration: none;
 }
 
 #web-footer, #studio-footer {
@@ -1188,15 +1193,16 @@ input, textarea {
 
 /* Footer Social Media Section */
 .footer-social {
-    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 250px;
 }
 
 .footer-social-container {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: left; /* Left-align the ul */
-    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .footer-social h4 {
@@ -1227,13 +1233,6 @@ input, textarea {
 }
 
 /* Style for individual social media icons */
-.footer-social-container li {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    /* text-align: left; Align the social media icons to the left */
-}
-
 .footer-instagram {
     width: 24px;
     height: 24px;
