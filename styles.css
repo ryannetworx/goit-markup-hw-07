@@ -780,7 +780,7 @@ input, textarea {
 }
 
 /* Responsive table - split into two columns on smaller screens */
-@media (max-width: 794px) {
+@media (max-width: 768px) {
     .section-content-1 table {
         width: 100%; /* Make the table width 100% */
         max-width: 792px; /* Set a maximum width for the table */
@@ -1266,15 +1266,15 @@ input, textarea {
 
 /* Footer Logo and Social Media Sections */
 .footer-logo,
-.footer-social {
-    display: inline-flex;
+.footer-social,
+.subscribe {
+    /* display: inline-flex;
     align-items: center;
-    flex: 1;
+    flex: 1; */
     padding: 30px;
 }
 
 .subscribe {
-    /* justify-content: space-between; */
     display: flex;
     flex-direction: column;
     margin-top: -55px;
@@ -1357,10 +1357,64 @@ input, textarea {
     background: var(--pressed-state-color);
 }
 
-/* For tablets */
+/* for tablet devices */
 @media (max-width: 768px) {
-    .footer-div,
+    .footer-group {
+        background: #2E2F42;
+        height: 400px;
+    }
+    
+    .footer-div {
+        width: 798px;
+        flex-direction: flex;
+        flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+        justify-content: space-between; /* Distributes the items along the main axis with maximum space between them */
+        margin-left: 40px;
+        margin-right: 40px;
+    }
 
+}
+
+/* For mobile */
+@media (max-width: 599px) {
+    .footer-div {
+        width: 599px;
+        height: 664px;
+        flex-direction: column;
+        background: #2E2F42;
+        /* display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; */
+        /* flex-direction: column; Stack items vertically on smaller screens */
+    }
+
+    .footer-list-container,
+    .footer-social-container,
+    .subscribe {
+        align-items: center;
+    }
+
+    .footer-logo,
+    .footer-social {
+        margin-top: 30px;
+    }
+
+    .subscribe {
+        margin-top: 0px;
+    }
+
+    .email-subscribe-btns {
+        flex-direction: column;
+    }
+
+    #subscribe_email {
+        width: 398px;
+    }
+
+    .subscribe-btns {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 
