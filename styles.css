@@ -1134,7 +1134,6 @@ input, textarea {
     background: #2E2F42;
     margin-top: 100px;
     display: flex;
-    justify-content: center;
     justify-content: space-around;
     /* align-items: flex-start; Align elements at the top */
     /* flex-wrap: wrap; */
