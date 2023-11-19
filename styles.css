@@ -1135,19 +1135,13 @@ input, textarea {
     margin-top: 100px;
     display: flex;
     justify-content: space-around;
-    /* align-items: flex-start; Align elements at the top */
-    /* flex-wrap: wrap; */
-    /* position: relative; */
 }
 
 .footer-div {
     /* width: 100%; */
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    margin-left: 50px;
-    /* padding: 0 0px; */
-    /* margin-top: 10px; */
 }
 
 .footer-list-container {
@@ -1155,12 +1149,6 @@ input, textarea {
     height: auto;
     display: flex;
     flex-direction: column;
-    /* margin-left: -350px; */
-    /* justify-content: center; */
-    /* align-items: flex-start; */
-    /* list-style: none;
-    padding-left: 40px; */
-    /* flex: 1; */
 }
 
 .footer-list-container a {
@@ -1289,11 +1277,8 @@ input, textarea {
     /* justify-content: space-between; */
     display: flex;
     flex-direction: column;
-    width: 100%;
-    border-radius: 4px;
-    /* gap: 16px; */
-    /* margin-top: 62px; */
-    /* margin-right: 150px; */
+    margin-top: -55px;
+
 }
 
 .subscribe-label {
@@ -1373,33 +1358,11 @@ input, textarea {
     background: var(--pressed-state-color);
 }
 
-.footer-div,
-.footer-social,
-.subscribe {
-    /* width: 33%; */
-    /* flex-direction: column; */
-} 
 
-/* Styles for smaller screens */
-@media screen and (max-width: 768px) {
-    .footer-group {
-        flex-direction: colum;
-    }
 
-    .footer-div {
-        position: relative;
-        margin-left: 100px;
-    }
 
-    .footer-social {
-        order: 2;
-    }
 
-    .subscribe {
-        order: 3;
-    }
 
-}
 
 /* PORTFOLIO ******************************** */
 
