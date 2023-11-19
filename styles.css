@@ -1278,7 +1278,6 @@ input, textarea {
     display: flex;
     flex-direction: column;
     margin-top: -55px;
-
 }
 
 .subscribe-label {
@@ -1358,45 +1357,11 @@ input, textarea {
     background: var(--pressed-state-color);
 }
 
-/* Responsive styles */
-
+/* For tablets */
 @media (max-width: 768px) {
-    .footer-group {
-        flex-direction: column;
-        align-items: center;
-        height: auto; /* Adjust height as needed */
-    }
+    .footer-div,
 
-    /* .footer-div {
-        flex-direction: flex;
-        align-items: center;
-    } */
-
-    .footer-social,
-    .footer-list-container {
-        display: flex;
-        width: auto;
-        text-align: center;
-    }
-
-    .footer-social-container {
-        margin-top: 0; /* Adjust margin as needed */
-    }
-
-    .footer-social h4 {
-        text-align: center;
-    }
-
-    .social-buttons-row {
-        flex-direction: row;
-    }
-
-    .subscribe {
-        flex-direction: column;
-        margin-top: 0; /* Adjust margin as needed */
-    }
 }
-
 
 
 
